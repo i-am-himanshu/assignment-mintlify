@@ -1,0 +1,143 @@
+body {
+    background-color: lab(2.42579% -.165291 -.470081);
+    font-family: "Arial", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    scrollbar-gutter: stable;
+    color: lab(100% 0 0);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.items-start{
+    align-items: flex-start;
+}
+
+.grid{
+    display: grid;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.py-4{
+    padding-block: calc(0.25rem * 4);
+}
+
+.px-6{
+    padding-inline: calc(0.25rem * 6);
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.z-50{
+    z-index: 50;
+}
+
+.z-100{
+    z-index: 100;
+}
+
+.sticky{
+    position: sticky;
+}
+
+.top-0{
+    top: 0;
+}
+
+.relative{
+    position: relative;
+}
+
+.gap-x-42{
+    column-gap: calc(0.25rem * 42);
+}
+
+.gap-x-8{
+    column-gap: calc(0.25rem * 8);
+}
+
+.bg-image-hero {
+    z-index: -1;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -10rem;
+    -webkit-mask-image: linear-gradient(#000 0%,rgba(0,0,0,.99) 18.5%,rgba(0,0,0,.953) 34.3%,rgba(0,0,0,.894) 47.6%,rgba(0,0,0,.824) 58.5%,rgba(0,0,0,.74) 67.5%,rgba(0,0,0,.647) 74.7%,rgba(0,0,0,.55) 80.3%,rgba(0,0,0,.45) 84.7%,rgba(0,0,0,.353) 88%,rgba(0,0,0,.26) 90.5%,rgba(0,0,0,.176) 92.5%,rgba(0,0,0,.106) 94.2%,rgba(0,0,0,.047) 95.9%,rgba(0,0,0,.01) 97.7%,transparent 100%);
+    mask-image: linear-gradient(#000 0%,rgba(0,0,0,.99) 18.5%,rgba(0,0,0,.953) 34.3%,rgba(0,0,0,.894) 47.6%,rgba(0,0,0,.824) 58.5%,rgba(0,0,0,.74) 67.5%,rgba(0,0,0,.647) 74.7%,rgba(0,0,0,.55) 80.3%,rgba(0,0,0,.45) 84.7%,rgba(0,0,0,.353) 88%,rgba(0,0,0,.26) 90.5%,rgba(0,0,0,.176) 92.5%,rgba(0,0,0,.106) 94.2%,rgba(0,0,0,.047) 95.9%,rgba(0,0,0,.01) 97.7%,transparent 100%);
+    background-image: url(https://www.mintlify.com/hero/bg-dark.svg);
+}
+
+.isolate{
+    isolation: isolate;
+}
+
+.pointer-events-none{
+    pointer-events: none;
+}
+
+.select-none{
+    user-select: none;
+}
+
+.max-w-66{
+    max-width: 66rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gap-1{
+    gap: calc(0.25rem * 1);
+}
+
+.gap-2{
+    gap: calc(0.25rem * 2);
+}
+
+.px-3{
+    padding-inline: calc(0.25rem * 3);
+}
+
+.py-1{
+    padding-block: calc(0.25rem * 1);
+}
