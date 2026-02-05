@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mintlify - The Intelligent Documentation Platform</title>
 </head>
 <body class="">
     
-    <header class="w-full py-4 px-6 z-50 mx-auto sticky top-0 ">
+    <header class="w-full py-4 px-6 z-50 mx-auto sticky top-0 backdrop-blur-lg">
         <div class="relative w-full h-full z-100">
             <div class="flex items-center justify-between max-w-66 w-full mx-auto gap-x-8">
                 <div>
@@ -17,17 +20,17 @@
                 <div>
                     <nav>
                         <ul class="flex gap-1">
-                            <li class="px-3 py-1">Resources</li>
-                            <li class="px-3 py-1">Documentation</li>
-                            <li class="px-3 py-1">Customers</li>
-                            <li class="px-3 py-1">Blog</li>
-                            <li class="px-3 py-1">Pricing</li>
+                            <li class="px-3 py-1 cursor-pointer">Resources</li>
+                            <li class="px-3 py-1 cursor-pointer">Documentation</li>
+                            <li class="px-3 py-1 cursor-pointer">Customers</li>
+                            <li class="px-3 py-1 cursor-pointer">Blog</li>
+                            <li class="px-3 py-1 cursor-pointer">Pricing</li>
                         </ul>
                     </nav>
                 </div>
                 <div class="flex items-center gap-2">
-                    <button>Contact Sales</button>
-                    <button>Start for free</button>
+                    <button class="border bg-background-soft border-transparent rounded-full text-text-main px-3 p-y-7-5 font-medium cursor-pointer text-15px">Contact Sales</button>
+                    <button class="border rounded-full px-3 p-y-7-5 font-medium cursor-pointer text-15px">Start for free</button>
                 </div>
             </div>
         </div>
@@ -36,9 +39,114 @@
         
     </header>
 
-    <section class="relative select-none isolate h-full w-full">
+    <section class="relative isolate">
         <div class="bg-image-hero pointer-events-none w-full h-full"></div>
-        
+        <div class="flex items-center justify-center mt-30px">
+            <div class="flex items-center gap-2-5 cursor-pointer bg-border-soft rounded-60px pl-1 pr-2 py-1">
+                <span class="bg-green-light px-2 py-0-5 text-xs-150 rounded-60px font-medium">NEW</span>
+                <p class="m0">Self-updating docs with agent suggestions</p>
+                <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="shrink-0 select-none size-4 text-white"><path d="M9 1C4.589 1 1 4.589 1 9C1 13.411 4.589 17 9 17C13.411 17 17 13.411 17 9C17 4.589 13.411 1 9 1ZM11.53 9.53L8.53 12.53C8.384 12.676 8.192 12.75 8 12.75C7.808 12.75 7.616 12.677 7.47 12.53C7.177 12.237 7.177 11.762 7.47 11.469L9.94 8.999L7.47 6.529C7.177 6.236 7.177 5.761 7.47 5.468C7.763 5.175 8.238 5.175 8.531 5.468L11.531 8.468C11.824 8.761 11.824 9.236 11.531 9.529L11.53 9.53Z" fill="currentColor"></path></svg>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center pt-2-5rem pb-24">
+            <h1 class="w-full max-w-43rem text-center text-text-main hero-title font-semibold leading-115 text-balance m0">The Intelligent Knowledge Platform</h1>
+            <p class="text-text-main text-lg-150 mt-6 text-center max-w-29-5rem m0">Helping teams create and maintain world-class documentation built for both humans and AI</p>
+            <form action="" class="flex mt-8 p-1 max-w-22-5rem w-full border border-border-soft rounded-full bg-border-soft items-center gap-1-5 backdrop-blur-12px">
+                <input type="email" placeholder="Email address" class="px-3 h-8 outline-none w-full text-text-main text-15px font-medium leading-150 border-transparent background-transparent m0">
+                <button type="submit" class="rounded-full text-15px inline-flex items-center justify-center cursor-pointer gap-1-5 font-medium shrink-0 bg-background-invert border-background-invert px-3 p-y-7-5">Start now</button>
+            </form>
+        </div>
+        <div >
+            <div class="mx-auto flex items-center justify-center ">
+                <img class="rounded-t-3xl border-3 border-background-soft border-b-0" width="1080" height="656" src="https://www.mintlify.com/hero/hero-image-dark.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-between mx-auto px-8 pt-18 pb-24">
+        <div class="grid grid-cols-4 grid-rows-2 gap-x-25 gap-y-7 max-w-5xl">
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="20" src="assets/anthropic.png" alt="">
+                </div>
+            </div>
+            <div  class="h-10 flex items-center justify-center  py-4">
+               <div>
+                <img height="26" src="assets/coinbase.png" alt="">
+               </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4"> 
+                <div>
+                    <img height="34" src="assets/microsoft.png" alt="">
+                </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="37" src="assets/perplexity.png" alt="">
+                </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="29" src="assets/hubspot.png" alt="">
+                </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="39" src="assets/x.png" alt="">
+                </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="35" src="assets/paypal.png" alt="">
+                </div>
+            </div>
+            <div class="h-10 flex items-center justify-center  py-4">
+                <div>
+                    <img height="28" src="assets/lovable.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mx-auto max-w-5xl flex flex-col items-center justify-center mb-9rem">
+        <div class="flex flex-col items-center justify-center gap-4 px-8 py-12">
+            <h2 class="section-style m0">Built for the intelligence age</h2>
+            <p class="text-text-soft text-center max-w-40-5rem text-balance">Integrate AI into every part of your docs lifecycle. Woven into how your knowledge is written, maintained, and understood by both users and LLMs.</p>
+        </div>
+        <div class="flex flex-col gap-6">
+            <div class="flex gap-6">
+                <div class="rounded-3xl border border-border-sub p-1-5 w-fit">
+                    <div class="p-6 flex flex-col gap-4">
+                        <p class="text-brand font-mono text-xs font-medium m0">LLMs.TXT & MCP</p>
+                        <h3 class="m0 text-2xl font-medium text-text-main">Built for both people and AI</h3>
+                        <p class="text-text-soft text-base-1-5 text-balance">Ensure your product shows up in the AI workflows users already rely on. We support llms.txt, MCP, and whatever comes next.</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img width="400" src="assets/built2.png" alt="">
+                    </div>
+                </div>
+                <div class="rounded-3xl border border-border-sub p-1-5 w-fit">
+                    <div class="p-6 flex flex-col gap-4">
+                        <p class="text-brand font-mono text-xs font-medium m0">AGENT</p>
+                        <h3 class="m0 text-2xl font-medium text-text-main">Self-updating knowledge management</h3>
+                        <p class="text-text-soft text-base-1-5 text-balance">Draft, edit, and maintain content with a context-aware agent. Move faster and more consistently without the documentation debt.</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img width="400" src="assets/built1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-3xl border border-border-sub w-full">
+                <div class="px-8 py-12 flex flex-col gap-4 items-center m-1-5 mb-0">
+                    <p class="text-brand font-mono text-xs-150 font-medium leading-150 tracking text-balance m0">ASSISTANT</p>
+                    <h4 class="text-2xl text-center font-medium leading-130 text-text-main m0">Intelligent assistance for your users</h4>
+                    <p class="text-text-soft text-base-1-5 text-center max-w-40-5rem text-balance m0">Turn every documentation visit into a guided conversation. Your AI assistant understands context and delivers what users need.</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img width="1000" src="assets/assistant.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
